@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 
 function Circle6() {
   return <Circlee></Circlee>;

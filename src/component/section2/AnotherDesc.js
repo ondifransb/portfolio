@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css, keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 
 function AnotherDesc({ ScrollVal, setOnHoverDesc, setAboutMee, setContactMe, setTellMe }) {
   return (

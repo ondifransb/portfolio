@@ -36,7 +36,7 @@ function Section2({ ScrollVal }) {
 
   return (
     <Base>
-      <Property1 ScrollVall={ScrollVal} />
+      <Property1 ScrollVall={ScrollVal} OnHoverDesc={OnHoverDesc} />
       <Aboutme ShowAboutMe={ShowAboutMe} ScrollValue={ScrollValue} />
       <AboutContent AboutMee={AboutMee} />
       <ContactContent ContactMe={ContactMe} />

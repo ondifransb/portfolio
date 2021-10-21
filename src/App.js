@@ -3,6 +3,7 @@ import "./App.css";
 import Section1 from "./component/Section1/Section1";
 import Section2 from "./component/section2/section2";
 import Section3 from "./component/section3/Section3";
+import Section4 from "./component/section4/Section4";
 
 function App() {
   const [Scroll, setScroll] = useState(window.scrollY);
@@ -32,6 +33,7 @@ function App() {
       <Section1 />
       <Section2 ScrollVal={ScrollVal} Scroll={Scroll} />
       <Section3 />
+      <Section4 />
     </div>
   );
 }
