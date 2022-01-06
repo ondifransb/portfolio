@@ -7,8 +7,9 @@ import ContactContent from "./ContactContent";
 import Property1 from "./property1";
 import SelfDescContent from "./SelfDescCover";
 import TellMeContent from "./TellMe";
-
+  
 function Section2({ ScrollVal }) {
+  
   const [ScrollValue, setScrollValue] = useState(window.scrollY);
   useEffect(() => {
     function SetScroll() {
