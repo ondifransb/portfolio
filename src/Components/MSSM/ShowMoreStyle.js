@@ -123,6 +123,7 @@ export const OnGoinWrapper = styled.div`
 	height: 100%;
 
 	background-color: white;
+	box-shadow: inset 0px 0px 5px 0px gray;
 
 	display: flex;
 	flex-direction: column;
@@ -157,19 +158,19 @@ export const OnGoinWrapper = styled.div`
 
 const TriggerAnimationTrue = keyframes`
 from{
-	background-color: black;
+	opacity: 1;
 }
 to{
-	background-color: white;
+	opacity: 0;
 }
 `;
 
 const TriggerAnimationFalse = keyframes`
 from{
-	background-color: white;
+	opacity: 0;
 }
 to{
-	background-color: black;
+	opacity: 1;
 }
 `;
 
@@ -187,7 +188,7 @@ export const OnGoingTrigger1 = styled.div`
 	position: absolute;
 	left: 0%;
 	top: 45%;
-	transform: translate(-50%, -20%);
+	transform: translate(-50%, -25%);
 
 	animation: ${(props) =>
 		props.animate
@@ -208,12 +209,12 @@ export const OnGoingTrigger2 = styled.div`
 	border: none;
 	border-radius: 1rem;
 
-	background-color: red;
+	background-color: black;
 
 	position: absolute;
 	left: 100%;
 	top: 45%;
-	transform: translate(-50%, -20%);
+	transform: translate(-50%, -25%);
 
 	animation: ${(props) =>
 		props.animate
