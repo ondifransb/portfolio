@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { NavbarStyle, Home } from "../HomePage/HomePageStyle";
+import Content1 from "./Content1.png";
 
 export const Content = styled.div`
 	height: 90%;
@@ -36,6 +37,11 @@ export const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	width: 50%;
+	/* background-color: red; */
+
+	@media only screen and (max-width: 600px) {
+		opacity: 0;
+	}
 `;
 
 export const ContentHome = styled(Home)`
@@ -128,7 +134,7 @@ export const MainHeroWrapper = styled.div`
 		position: absolute;
 		bottom: 0;
 		color: white;
-		font-size: clamp(1rem, 2vw, 4rem);
+		font-size: clamp(0.9rem, 2vw, 3rem);
 		font-family: "Heebo", sans-serif;
 		left: 50%;
 		transform: translate(-50%);
@@ -149,7 +155,7 @@ export const Photo = styled.div`
 
 	h1 {
 		display: inline;
-		font-size: clamp(2rem, 2vw, 5rem);
+		font-size: clamp(1rem, 2vw, 4rem);
 		font-family: "Heebo", sans-serif;
 		color: #ffff;
 		opacity: 0.7;
@@ -186,16 +192,16 @@ export const SecondLayer = styled(HeroSection)`
 	${Photo}:nth-child(1) {
 		display: flex;
 		align-items: flex-start;
-		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 		box-shadow: none;
 		background: none;
 		h1 {
-			line-height: 6rem;
+			/* line-height: clamp(1rem, 8vh, 6rem); */
 		}
 		p {
+			width: 100%;
 			line-height: normal;
-			position: absolute;
-			bottom: 1rem;
 			color: white;
 		}
 
@@ -213,7 +219,14 @@ export const SecondLayer = styled(HeroSection)`
 		align-items: center;
 		box-shadow: none;
 		background: none;
-		width: fit-content;
+		width: 60%;
+		height: fit-content;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
 		&:hover {
 			transform: scale(1);
 		}
@@ -241,13 +254,17 @@ const Animation2 = keyframes`
 export const ThirdLayer = styled(SecondLayer)`
 	${Photo}:nth-child(1) {
 		display: flex;
-		align-items: center;
+		flex-direction: row;
+		/* align-items: center; */
+		justify-content: flex-start;
 		box-shadow: none;
 		background: none;
-		width: fit-content;
+		width: 60%;
+		height: 50%;
 
 		img {
 			transform: scale(1.2);
+			width: 50%;
 		}
 
 		img:nth-child(2) {
@@ -263,18 +280,26 @@ export const ThirdLayer = styled(SecondLayer)`
 		}
 	}
 	${Photo}:nth-child(2) {
-		align-items: center;
 		box-shadow: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 40%;
+
 		h1 {
-			line-height: 6rem;
-			text-shadow: 2px 1px 2px #1276a8;
+			width: fit-content;
+			text-align: left;
+			font-size: clamp(2rem, 4vw, 6rem);
+			text-shadow: 2px 2px 2px #1276a8;
 		}
+
 		p {
-			line-height: normal;
+			display: block;
+			font-size: clamp(1rem, 1.8vw, 2rem);
+			font-family: "Roboto", sans-serif;
+			width: 90%;
+			text-align: justify;
 			color: white;
-			position: absolute;
-			bottom: 3rem;
-			width: 80%;
 		}
 
 		&:hover {
@@ -293,14 +318,6 @@ export const FourthLayer = styled(SecondLayer)`
 		align-items: flex-start;
 		box-shadow: none;
 		background: none;
-		h1 {
-			line-height: 6rem;
-		}
-		p {
-			line-height: normal;
-			bottom: 9rem;
-			color: white;
-		}
 
 		&:hover {
 			transform: scale(1.05);
@@ -314,8 +331,10 @@ export const FourthLayer = styled(SecondLayer)`
 	${Photo}:nth-child(2) {
 		box-shadow: none;
 		background: none;
-		width: 60%;
-		height: 110%;
+		display: flex;
+		align-items: center;
+		width: 50%;
+		height: fit-content;
 		img {
 			width: 100%;
 			height: 100%;

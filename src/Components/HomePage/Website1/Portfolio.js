@@ -41,14 +41,14 @@ function Portfolio() {
 				<Wrapper>
 					<Content>
 						<Img Picture={Studio}></Img>
-						<Button onClick={() => console.log("clicked")}>more detail</Button>
+						<Button onClick={() => Navigate("/Uvisual")}>more detail</Button>
 					</Content>
 				</Wrapper>
 
 				<Wrapper>
 					<Content>
 						<Img Picture={Coffee}></Img>
-						<Button onClick={() => console.log("clicked")}>more detail</Button>
+						<Button onClick={() => Navigate("/Architect")}>more detail</Button>
 					</Content>
 				</Wrapper>
 

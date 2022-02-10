@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import rootReducers from "./redux/reducers";
+import "./Components/MSSM/UniversalSansGX.ttf";
 
 const store = createStore(rootReducers);
 

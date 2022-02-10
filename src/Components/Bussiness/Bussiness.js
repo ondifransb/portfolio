@@ -76,6 +76,7 @@ function Bussiness() {
 							materi yang terpercaya bersama Porto
 						</p>
 					</Photo>
+
 					<Photo>
 						<img src={Content1} />
 					</Photo>
@@ -98,15 +99,16 @@ function Bussiness() {
 
 				<FourthLayer>
 					<Photo>
-						<h1>Saatnya Kembangkan Portofoliomu</h1>
+						<h1>Video Edukasi Dan Webinar Ekslusif</h1>
 						<p>
-							Kini kamu bisa mengembangkan portofoliomu dengan stockpick dan
-							materi yang terpercaya bersama Porto
+							Video Edukasi seputar saham dan Webinar Ekslusif dengan narasumber
+							terbaik dari berbagai industri.
 						</p>
 					</Photo>
 					<Photo>
 						<img src={Investasi} />
 					</Photo>
+
 					<Footer>
 						<h1>© 2021 Porto | PT Mahakarya Jenius Rangkaya</h1>
 						<MediaSocial>
