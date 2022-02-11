@@ -14,9 +14,9 @@ const store = createStore(rootReducers);
 ReactDOM.render(
 	<React.StrictMode>
 		{/* note: hashrouter for ghpages */}
-		{/* <HashRouter> */}
-		<App />
-		{/* </HashRouter> */}
+		<HashRouter>
+			<App />
+		</HashRouter>
 	</React.StrictMode>,
 	document.getElementById("root")
 );

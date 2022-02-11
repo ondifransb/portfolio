@@ -9,6 +9,8 @@ import MainMSSM from "./Components/MSSM/MainMSSM";
 import AvanaHome from "./Components/MSSM/AvanaHome";
 import ShowMore from "./Components/MSSM/ShowMore";
 import Berlangganan from "./Components/Bussiness/Berlangganan";
+import Join from "./Components/Bussiness/Join";
+import Register from "./Components/Bussiness/Register";
 
 function App() {
 	return (
@@ -19,6 +21,8 @@ function App() {
 
 				<Route path="/Porto" element={<Bussiness />} />
 				<Route path="Porto/Subs" element={<Berlangganan />} />
+				<Route path="Porto/Join" element={<Join />} />
+				<Route path="Porto/Register" element={<Register />} />
 
 				<Route path="/Uvisual" element={<Uvisual />} />
 

@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const Animation = keyframes`
+from{
+    opacity: 0;
+	transform: translate(-2%, -2%);
+}
+to{
+    opacity: 1;
+    top: 0%;
+	left: 0%;
+	transform: translate(0%, 0%);
+}
+`;
 
 export const MainContent = styled.div`
 	width: 100%;
@@ -17,6 +30,8 @@ export const MainContent = styled.div`
 		text-align: center;
 		font-family: "Heebo", sans-serif;
 		color: white;
+
+		animation: ${Animation} 1s ease-out forwards;
 	}
 	h1:nth-child(1) {
 		font-size: clamp(1rem, 6vw, 6rem);

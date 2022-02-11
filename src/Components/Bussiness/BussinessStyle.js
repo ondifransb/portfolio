@@ -51,11 +51,8 @@ export const Wrapper = styled.div`
 	float: center;
 	width: 66.6%;
 
-	${ContentHome}:nth-child(-n + 2) {
-		color: red;
-	}
 	/* @media only screen and (max-width: 600px) {
-		opacity: 0;
+		flex-direction: column;
 	} */
 `;
 
@@ -87,15 +84,30 @@ export const Registration = styled.div`
 
 	display: flex;
 	justify-content: flex-end;
-	font-size: clamp(0.5rem, 2vw, 1.5rem);
-	font-family: "Heebo", sans-serif;
-	text-align: center;
 
-	${ContentHome}:nth-child(2) {
+	${ContentHome}:nth-child(1) {
 		color: darkblue;
-		border-bottom: 0.15rem solid darkblue;
 		animation: ${Animation1} 1s ease-in infinite;
+
+		&:hover {
+			border-bottom: 0.15rem solid darkblue;
+		}
 	}
+`;
+
+const Animation = keyframes`
+from{
+    opacity: 0;
+	left: 40%;
+	top: 40%;
+	transform: translate(-40%, -40%);
+}
+to{
+    opacity: 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
 `;
 
 export const HeroSection = styled.div`
@@ -107,6 +119,8 @@ export const HeroSection = styled.div`
 	transform: translate(-50%, -50%);
 	text-align: center;
 	padding: 2rem 0;
+
+	animation: ${Animation} 1s ease-out forwards;
 
 	h1 {
 		display: inline;
@@ -365,16 +379,26 @@ export const Footer = styled.div`
 	}
 `;
 
-export const MediaSocial = styled.div`
+export const MediaSocial = styled.a`
 	width: fit-content;
 	height: fit-content;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	img {
 		width: fit-content;
+
 		justify-content: space-around;
+
 		cursor: pointer;
 
+		transition: 0.1s ease-in;
+
 		transform: scale(0.5);
+
+		&:hover {
+			transform: scale(0.7);
+		}
 	}
 `;

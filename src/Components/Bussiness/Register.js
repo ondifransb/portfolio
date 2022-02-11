@@ -11,9 +11,11 @@ import {
 	ContentHome,
 	Registration,
 } from "./BussinessStyle";
+import { Form, Button, Input, FormContent } from "./JoinStyle";
 import Porto from "./Porto.png";
+import { RegistForm } from "./RegisterStyle";
 
-function Berlangganan() {
+function Register() {
 	const Navigate = useNavigate();
 
 	return (
@@ -44,16 +46,21 @@ function Berlangganan() {
 						</Registration>
 					</Wrapper>
 				</ContentNav>
-				<MainContent>
-					<h1>Penasarankan?</h1>
-					<h1>
-						<span onClick={() => Navigate("/Porto/Join")}>Yuk</span> lihat semua
-						kontennya!
-					</h1>
-				</MainContent>
+
+				<RegistForm>
+					<Input type="text" placeholder="Nama Depan"></Input>
+					<Input type="text" placeholder="Nama Belakang"></Input>
+					<Input type="text" placeholder="E-mail"></Input>
+					<Input type="password" placeholder="Password"></Input>
+					<Button>Sign In</Button>
+					<h3>
+						Sudah bergabung?{" "}
+						<span onClick={() => Navigate("/Porto/Join")}> sini masuk</span>
+					</h3>
+				</RegistForm>
 			</Content>
 		</Container>
 	);
 }
 
-export default Berlangganan;
+export default Register;

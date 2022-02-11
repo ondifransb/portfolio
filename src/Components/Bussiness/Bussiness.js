@@ -30,10 +30,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Bussiness() {
-	useEffect(() => {
-		alert("Scroll Down");
-	}, []);
-
 	const Navigate = useNavigate();
 
 	return (
@@ -56,8 +52,9 @@ function Bussiness() {
 						</ContentHome>
 
 						<Registration>
-							<ContentHome>Login</ContentHome>
-							<ContentHome>SIGN UP</ContentHome>
+							<ContentHome onClick={() => Navigate("/Porto/Join")}>
+								JOIN
+							</ContentHome>
 						</Registration>
 					</Wrapper>
 				</ContentNav>
@@ -123,9 +120,15 @@ function Bussiness() {
 					<Footer>
 						<h1>© 2021 Porto | PT Mahakarya Jenius Rangkaya</h1>
 						<MediaSocial>
-							<img src={Instagram} />
-							<img src={Twitter} />
-							<img src={WhatsApp} />
+							<a href="https://instagram.com/porto.id">
+								<img src={Instagram} />
+							</a>
+							<a href="https://twitter.com/porto__id">
+								<img src={Twitter} />
+							</a>
+							<a href="https://api.whatsapp.com/send/?phone=6281282288225&text&app_absent=0">
+								<img src={WhatsApp} />
+							</a>
 						</MediaSocial>
 					</Footer>
 				</FourthLayer>
