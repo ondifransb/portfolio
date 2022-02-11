@@ -66,6 +66,7 @@ export const Logo = styled.div`
 	background-image: url(${(props) => props.Picture});
 	background-size: cover;
 	color: transparent;
+	cursor: pointer;
 `;
 
 const Animation1 = keyframes`
@@ -369,6 +370,7 @@ export const MediaSocial = styled.div`
 	img {
 		width: fit-content;
 		justify-content: space-around;
+		cursor: pointer;
 
 		transform: scale(0.5);
 	}

@@ -42,8 +42,8 @@ function Bussiness() {
 					<Wrapper>
 						<ContentHome>Stock</ContentHome>
 						<ContentHome>Education</ContentHome>
-						<ContentHome>Membership</ContentHome>
 						<ContentHome>Article</ContentHome>
+						<ContentHome>Membership</ContentHome>
 					</Wrapper>
 					<Registration>
 						<ContentHome>Login</ContentHome>

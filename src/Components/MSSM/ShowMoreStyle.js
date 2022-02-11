@@ -53,7 +53,8 @@ export const Project = styled.div`
 
 	box-shadow: 4px 4px 6px 0px #c9c9c9;
 
-	background-image: url(${(props) => props.Picture});
+	background-image: url(${(props) =>
+		props.animate2 ? props.Picture2 : props.Picture});
 	background-size: cover;
 	background-position: center;
 
@@ -175,13 +176,13 @@ to{
 `;
 
 export const OnGoingTrigger1 = styled.div`
-	width: 1%;
+	width: clamp(12px, 1%, 1%);
 	height: 10%;
 
 	cursor: pointer;
 
 	border: none;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 
 	background-color: black;
 
@@ -201,13 +202,13 @@ export const OnGoingTrigger1 = styled.div`
 `;
 
 export const OnGoingTrigger2 = styled.div`
-	width: 1%;
+	width: clamp(12px, 1%, 1%);
 	height: 10%;
 
 	cursor: pointer;
 
 	border: none;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 
 	background-color: black;
 
@@ -224,4 +225,29 @@ export const OnGoingTrigger2 = styled.div`
 			: css`
 					${TriggerAnimationTrue} 2s ease-in-out forwards
 			  `};
+`;
+
+export const OnGoingTrigger3 = styled.div`
+	cursor: pointer;
+
+	border: none;
+	border-radius: 50%;
+
+	position: absolute;
+	left: 50.5%;
+	top: 92%;
+
+	p {
+		opacity: 0.2;
+		transition: 0.1s ease-in;
+
+		&:hover {
+			opacity: 1;
+			transform: scale(1.05);
+		}
+	}
+`;
+
+export const OnGoingTrigger4 = styled(OnGoingTrigger3)`
+	left: 47.5%;
 `;

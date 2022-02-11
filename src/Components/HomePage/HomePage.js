@@ -57,7 +57,7 @@ function HomePage() {
 						the beginning, and i really can’t wait to push my limit even further
 						by working with you on our next project. i usually want my work use
 						less third parties library, it allows me to feel a complete freedom
-						and testing my competence, creativity, and imagination.
+						and also i want to test my competence, creativity, and imagination.
 					</p>
 				</BioWrapper>
 			</SecondSection>
