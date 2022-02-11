@@ -7,14 +7,16 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import rootReducers from "./redux/reducers";
 import "./Components/MSSM/UniversalSansGX.ttf";
+import { HashRouter } from "react-router-dom";
 
 const store = createStore(rootReducers);
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Provider store={store}>
-			<App />
-		</Provider>
+		{/* note: hashrouter for ghpages */}
+		{/* <HashRouter> */}
+		<App />
+		{/* </HashRouter> */}
 	</React.StrictMode>,
 	document.getElementById("root")
 );

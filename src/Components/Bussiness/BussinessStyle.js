@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import { NavbarStyle, Home } from "../HomePage/HomePageStyle";
-import Content1 from "./Content1.png";
 
 export const Content = styled.div`
 	height: 90%;
@@ -22,26 +21,13 @@ export const Content = styled.div`
 `;
 
 export const ContentNav = styled(NavbarStyle)`
-	/* background: #837474; */
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 1rem;
-	width: 95%;
+	width: 100%;
 	position: fixed;
 	left: 50%;
 	transform: translateX(-50%);
-`;
-
-export const Wrapper = styled.div`
-	/* background: #837474; */
-	display: flex;
-	justify-content: space-between;
-	width: 50%;
-	/* background-color: red; */
-
-	@media only screen and (max-width: 600px) {
-		opacity: 0;
-	}
 `;
 
 export const ContentHome = styled(Home)`
@@ -56,6 +42,21 @@ export const ContentHome = styled(Home)`
 		letter-spacing: 0.4rem;
 		color: #23cc8c;
 	}
+`;
+
+export const Wrapper = styled.div`
+	display: flex;
+	justify-content: space-between;
+	width: 33.3%;
+	float: center;
+	width: 66.6%;
+
+	${ContentHome}:nth-child(-n + 2) {
+		color: red;
+	}
+	/* @media only screen and (max-width: 600px) {
+		opacity: 0;
+	} */
 `;
 
 export const Logo = styled.div`
@@ -82,15 +83,17 @@ const Animation1 = keyframes`
 `;
 
 export const Registration = styled.div`
+	width: 37%;
+
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	font-size: clamp(0.5rem, 2vw, 1.5rem);
 	font-family: "Heebo", sans-serif;
 	text-align: center;
 
 	${ContentHome}:nth-child(2) {
-		border-bottom: 0.2rem solid black;
-		color: black;
+		color: darkblue;
+		border-bottom: 0.15rem solid darkblue;
 		animation: ${Animation1} 1s ease-in infinite;
 	}
 `;

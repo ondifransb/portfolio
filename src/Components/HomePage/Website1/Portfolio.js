@@ -34,7 +34,7 @@ function Portfolio() {
 				<Wrapper>
 					<Content>
 						<Img Picture={Bussiness}></Img>
-						<Button onClick={() => Navigate("/bussiness")}>more detail</Button>
+						<Button onClick={() => Navigate("/Porto")}>more detail</Button>
 					</Content>
 				</Wrapper>
 
@@ -48,7 +48,7 @@ function Portfolio() {
 				<Wrapper>
 					<Content>
 						<Img Picture={Coffee}></Img>
-						<Button onClick={() => Navigate("/Architect")}>more detail</Button>
+						<Button onClick={() => Navigate("/Avana")}>more detail</Button>
 					</Content>
 				</Wrapper>
 

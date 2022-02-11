@@ -27,11 +27,14 @@ import Instagram from "./Instagram.png";
 import Twitter from "./Twitter.png";
 import WhatsApp from "./WhatsApp.png";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Bussiness() {
 	useEffect(() => {
 		alert("Scroll Down");
 	}, []);
+
+	const Navigate = useNavigate();
 
 	return (
 		<Container>
@@ -40,15 +43,23 @@ function Bussiness() {
 				<ContentNav>
 					<Logo Picture={Porto}>Logo Detail</Logo>
 					<Wrapper>
-						<ContentHome>Stock</ContentHome>
-						<ContentHome>Education</ContentHome>
-						<ContentHome>Article</ContentHome>
-						<ContentHome>Membership</ContentHome>
+						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
+							Stock
+						</ContentHome>
+
+						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
+							Education
+						</ContentHome>
+
+						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
+							Article
+						</ContentHome>
+
+						<Registration>
+							<ContentHome>Login</ContentHome>
+							<ContentHome>SIGN UP</ContentHome>
+						</Registration>
 					</Wrapper>
-					<Registration>
-						<ContentHome>Login</ContentHome>
-						<ContentHome>SIGN UP</ContentHome>
-					</Registration>
 				</ContentNav>
 
 				<HeroSection>

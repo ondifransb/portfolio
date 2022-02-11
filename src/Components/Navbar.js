@@ -14,7 +14,7 @@ function Navbar() {
 		<NavbarStyle>
 			<NavWrapper>
 				<Home onClick={() => Navigate("/")}> Home </Home>
-				<About onClick={() => Navigate("/portfolio")}> Portfolio </About>
+				<About onClick={() => Navigate("/projects")}> Portfolio </About>
 				<Contact> Contact </Contact>
 			</NavWrapper>
 		</NavbarStyle>

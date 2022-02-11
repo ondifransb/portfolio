@@ -15,7 +15,7 @@ function MainMSSM() {
 			<MainWrapper>
 				<AvanaLogo
 					Picture={Logo}
-					onClick={() => Navigate("/Architect/HomePage")}
+					onClick={() => Navigate("/Avana/HomePage")}
 				></AvanaLogo>
 				<video autoPlay muted loop>
 					<source src={Video} type="video/mp4" />

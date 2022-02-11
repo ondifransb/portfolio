@@ -22,7 +22,7 @@ function AvanaHome() {
 			<MainWrapper>
 				<NavWrapper>
 					<NavLogo>
-						<img src={Logo} onClick={() => Navigate("/Architect")} />
+						<img src={Logo} onClick={() => Navigate("/Avana")} />
 					</NavLogo>
 				</NavWrapper>
 				<HeroWrapper>
@@ -40,7 +40,7 @@ function AvanaHome() {
 							building, the user and the surrounding. We combined art, research,
 							and technology to create high quality space for the user.
 						</h3>
-						<p onClick={() => Navigate("/Architect/Portfolio")}>show more</p>
+						<p onClick={() => Navigate("/Avana/Portfolio")}>show more</p>
 					</Desc>
 				</HeroWrapper>
 			</MainWrapper>
