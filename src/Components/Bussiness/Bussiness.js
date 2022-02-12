@@ -1,13 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, NavWrapper } from "../HomePage/HomePageStyle";
 import Navbar from "../Navbar";
 import {
 	Content,
-	ContentNav,
-	ContentHome,
-	Logo,
-	Wrapper,
-	Registration,
 	HeroSection,
 	MainHeroWrapper,
 	Photo,
@@ -17,7 +12,6 @@ import {
 	Footer,
 	MediaSocial,
 } from "./BussinessStyle";
-import Porto from "./Porto.png";
 import Source from "./Source1.png";
 import Content1 from "./Content1.png";
 import Research from "./Research.png";
@@ -26,38 +20,28 @@ import Investasi from "./InvestasiAla.png";
 import Instagram from "./Instagram.png";
 import Twitter from "./Twitter.png";
 import WhatsApp from "./WhatsApp.png";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import ComponentNavbar from "./ComponentNavbar";
 
 function Bussiness() {
-	const Navigate = useNavigate();
+	const [Width, setWidth] = useState(window.innerWidth);
+
+	useEffect(() => {
+		const HandleResize = () => {
+			setWidth(window.innerWidth);
+		};
+		window.addEventListener("resize", HandleResize);
+
+		return () => {
+			window.removeEventListener("resize", HandleResize);
+		};
+	}, []);
+	console.log(Width);
 
 	return (
 		<Container>
 			<Navbar />
 			<Content>
-				<ContentNav>
-					<Logo Picture={Porto}>Logo Detail</Logo>
-					<Wrapper>
-						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
-							Stock
-						</ContentHome>
-
-						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
-							Education
-						</ContentHome>
-
-						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
-							Article
-						</ContentHome>
-
-						<Registration>
-							<ContentHome onClick={() => Navigate("/Porto/Join")}>
-								JOIN
-							</ContentHome>
-						</Registration>
-					</Wrapper>
-				</ContentNav>
+				<ComponentNavbar />
 
 				<HeroSection>
 					<h1>Special </h1>
@@ -78,44 +62,65 @@ function Bussiness() {
 
 				<SecondLayer>
 					<Photo>
-						<h1>Saatnya Kembangkan Portofoliomu</h1>
-						<p>
-							Kini kamu bisa mengembangkan portofoliomu dengan stockpick dan
-							materi yang terpercaya bersama Porto
-						</p>
+						<h1>
+							Saatnya Kembangkan Portofoliomu
+							<p>
+								Kini kamu bisa mengembangkan portofoliomu dengan stockpick dan
+								materi yang terpercaya bersama Porto
+							</p>
+						</h1>
 					</Photo>
 
-					<Photo>
-						<img src={Content1} />
-					</Photo>
+					{Width <= 568 ? null : (
+						<>
+							<Photo>
+								<img src={Content1} />
+							</Photo>
+						</>
+					)}
 				</SecondLayer>
 
 				<ThirdLayer>
+					{Width <= 568 ? null : (
+						<>
+							<Photo>
+								<img src={Research} />
+								<img src={Research2} />
+							</Photo>
+						</>
+					)}
+
 					<Photo>
-						<img src={Research} />
-						<img src={Research2} />
-					</Photo>
-					<Photo>
-						<h1>Stockpick Dengan Research Yang Terpercaya</h1>
-						<p>
-							Dapatkan informasi mengenai stockpick terbaik yang dipilih
-							berdasarkan riset akurat dan divalidasi oleh profesional di
-							bidangnya.
-						</p>
+						<h1>
+							Stockpick Dengan Research Terpercaya
+							<p>
+								Dapatkan informasi mengenai stockpick terbaik yang dipilih
+								berdasarkan riset akurat dan divalidasi oleh profesional di
+								bidangnya.
+							</p>
+						</h1>
 					</Photo>
 				</ThirdLayer>
 
 				<FourthLayer>
 					<Photo>
-						<h1>Video Edukasi Dan Webinar Ekslusif</h1>
-						<p>
-							Video Edukasi seputar saham dan Webinar Ekslusif dengan narasumber
-							terbaik dari berbagai industri.
-						</p>
+						<h1>
+							Video Edukasi dan Webinar Ekslusif
+							<p>
+								Dapatkan akses ke video edukasi seputar pasar saham dan
+								kesempatan mengikuti webinar eksklusif yang diisi oleh
+								narasumber terbaik di bidangnya.
+							</p>
+						</h1>
 					</Photo>
-					<Photo>
-						<img src={Investasi} />
-					</Photo>
+
+					{Width <= 568 ? null : (
+						<>
+							<Photo>
+								<img src={Investasi} />
+							</Photo>
+						</>
+					)}
 
 					<Footer>
 						<h1>© 2021 Porto | PT Mahakarya Jenius Rangkaya</h1>

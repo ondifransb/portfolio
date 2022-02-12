@@ -15,7 +15,6 @@ import Navbar from "../../Navbar";
 import Bussiness from "./Coorporate.jpeg";
 import Studio from "./Studio.jpeg";
 import Coffee from "./Coffee.jpeg";
-import Cake from "./Cake.jpeg";
 
 function Portfolio() {
 	const Navigate = useNavigate();
@@ -49,13 +48,6 @@ function Portfolio() {
 					<Content>
 						<Img Picture={Coffee}></Img>
 						<Button onClick={() => Navigate("/Avana")}>more detail</Button>
-					</Content>
-				</Wrapper>
-
-				<Wrapper>
-					<Content>
-						<Img Picture={Cake}></Img>
-						<Button onClick={() => console.log("clicked")}>more detail</Button>
 					</Content>
 				</Wrapper>
 			</MainWrapper>

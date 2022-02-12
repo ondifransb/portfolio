@@ -19,21 +19,8 @@ export const NavWrapper = styled.div`
 	width: fit-content;
 	display: flex;
 	justify-content: space-between;
-	font-size: clamp(1rem, 2rem, 2.5rem);
+	font-size: clamp(1rem, 2vw, 2vw);
 	font-weight: lighter;
-
-	/* @media (min-width: 319px) {
-		font-size: 0.5rem;
-	}
-	@media (min-width: 481px) {
-		font-size: 1rem;
-	}
-	@media (min-width: 641px) {
-		font-size: 2rem;
-	}
-	@media (min-width: 1281px) {
-		font-size: 2rem;
-	} */
 `;
 export const Home = styled.div`
 	box-sizing: border-box;
@@ -99,7 +86,7 @@ export const Wellcoming = styled.div`
 `;
 export const HiThere = styled.div`
 	display: block;
-	font-size: 5rem;
+	font-size: clamp(2rem, 5vw, 5vw);
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -113,18 +100,7 @@ export const Thankyou = styled.div`
 	padding: 0;
 	margin: 0;
 	width: fit-content;
-	@media (min-width: 319px) {
-		font-size: 2rem;
-	}
-	@media (min-width: 481px) {
-		font-size: 3rem;
-	}
-	@media (min-width: 641px) {
-		font-size: 3rem;
-	}
-	@media (min-width: 1281px) {
-		font-size: 5rem;
-	}
+	font-size: clamp(1rem, 4vw, 4vw);
 `;
 export const Hope = styled.div`
 	display: block;
@@ -134,18 +110,7 @@ export const Hope = styled.div`
 	padding: 0;
 	margin: 0;
 	width: fit-content;
-	@media (min-width: 319px) {
-		font-size: 0.8rem;
-	}
-	@media (min-width: 481px) {
-		font-size: 1rem;
-	}
-	@media (min-width: 641px) {
-		font-size: 1rem;
-	}
-	@media (min-width: 1281px) {
-		font-size: 2rem;
-	}
+	font-size: clamp(0.8rem, 2vw, 2vw);
 `;
 export const SecondSection = styled.div`
 	box-sizing: border-box;
@@ -161,7 +126,7 @@ export const BioWrapper = styled.div`
 	box-sizing: border-box;
 	padding: 1rem;
 	margin: 0;
-	width: 72%;
+	width: 72rem;
 	height: 90%;
 	position: relative;
 	top: 0%;
@@ -170,6 +135,7 @@ export const BioWrapper = styled.div`
 	border-radius: 2rem;
 	display: flex;
 	justify-content: space-around;
+
 	p {
 		height: 7rem;
 		overflow: none;
@@ -188,27 +154,28 @@ export const BioWrapper = styled.div`
 export const Name = styled.div`
 	box-sizing: border-box;
 	border-right: 0.15rem solid black;
-	padding: 2rem;
 	margin: 0;
-	width: fit-content;
+	width: 30vw;
 	height: fit-content;
-	color: white;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	color: black;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 	@media screen and (max-width: 1100px) {
 		padding: 0rem;
 	}
 
 	h1 {
-		font-size: clamp(1rem, 7vw, 20rem);
-		line-height: 0.7;
+		font-size: clamp(1rem, 5vw, 5vw);
+		line-height: 1.2;
 		font-weight: lighter;
-		width: fit-content;
-		height: fit-content;
-		margin: 0 0 1rem 0;
+		text-align: right;
 	}
 
 	h1:nth-child(1) {
@@ -245,14 +212,14 @@ export const Photo = styled.div`
 	&::before {
 		position: absolute;
 		content: "";
-		left: 2.5rem;
+		left: clamp(0.5rem, 2vw, 2vw);
 		top: 50%;
 		transform: translateY(-50%);
 		height: 100%;
 		width: 100%;
 		background-color: white;
 		border-radius: 50%;
-		transition: 0.5s ease-in;
+		transition: 1s ease-in;
 		z-index: -1;
 	}
 

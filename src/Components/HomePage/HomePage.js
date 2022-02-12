@@ -23,6 +23,12 @@ function HomePage() {
 	const [CustName, setCustName] = useState("");
 
 	useEffect(() => {
+		alert(
+			"for a better experience, please use desktop. mobile version is under construction."
+		);
+	}, []);
+
+	useEffect(() => {
 		setCustName(prompt("your name, please"));
 	}, []);
 

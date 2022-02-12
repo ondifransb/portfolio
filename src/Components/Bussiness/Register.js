@@ -3,17 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { Container, NavWrapper } from "../HomePage/HomePageStyle";
 import Navbar from "../Navbar";
 import { MainContent } from "./BerlanggananStyle";
-import {
-	Content,
-	ContentNav,
-	Logo,
-	Wrapper,
-	ContentHome,
-	Registration,
-} from "./BussinessStyle";
-import { Form, Button, Input, FormContent } from "./JoinStyle";
+import { Content } from "./BussinessStyle";
+import ComponentNavbar from "./ComponentNavbar";
+import { Form2, Button, Input, FormContent } from "./RegisterStyle";
 import Porto from "./Porto.png";
-import { RegistForm } from "./RegisterStyle";
 
 function Register() {
 	const Navigate = useNavigate();
@@ -22,32 +15,9 @@ function Register() {
 		<Container>
 			<Navbar />
 			<Content>
-				<ContentNav>
-					<Logo Picture={Porto} onClick={() => Navigate("/Porto")}>
-						Logo Detail
-					</Logo>
-					<Wrapper>
-						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
-							Stock
-						</ContentHome>
+				<ComponentNavbar />
 
-						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
-							Education
-						</ContentHome>
-
-						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
-							Article
-						</ContentHome>
-
-						<Registration>
-							<ContentHome onClick={() => Navigate("/Porto/Join")}>
-								JOIN
-							</ContentHome>
-						</Registration>
-					</Wrapper>
-				</ContentNav>
-
-				<RegistForm>
+				<Form2>
 					<Input type="text" placeholder="Nama Depan"></Input>
 					<Input type="text" placeholder="Nama Belakang"></Input>
 					<Input type="text" placeholder="E-mail"></Input>
@@ -55,9 +25,13 @@ function Register() {
 					<Button>Sign In</Button>
 					<h3>
 						Sudah bergabung?{" "}
-						<span onClick={() => Navigate("/Porto/Join")}> sini masuk</span>
+						<span onClick={() => Navigate("/Porto/Join")}>
+							{" "}
+							<br />
+							sini masuk
+						</span>
 					</h3>
-				</RegistForm>
+				</Form2>
 			</Content>
 		</Container>
 	);

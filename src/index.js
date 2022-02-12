@@ -3,20 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createStore } from "redux";
-import { Provider } from "react-redux";
-import rootReducers from "./redux/reducers";
-import "./Components/MSSM/UniversalSansGX.ttf";
-import { HashRouter } from "react-router-dom";
 
-const store = createStore(rootReducers);
+import "./Components/MSSM/UniversalSansGX.ttf";
+
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
 	<React.StrictMode>
-		{/* note: hashrouter for ghpages */}
-		<HashRouter>
-			<App />
-		</HashRouter>
+		{/* <HashRouter> */}
+		<App />
+		{/* </HashRouter> */}
 	</React.StrictMode>,
 	document.getElementById("root")
 );

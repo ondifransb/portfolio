@@ -23,14 +23,17 @@ export const Tittle = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: clamp(3rem, 5vw, 8rem); //clamp(px/rem, vw/vw, px/rem)
+	font-size: clamp(1rem, 5vw, 8rem); //clamp(px/rem, vw/vw, px/rem)
 
 	h1 {
 		font-family: "Heebo", sans-serif;
 		color: white;
 		/* font stroke using shadowbox */
-		text-shadow: -0.2rem -0.2rem 0 black, 0.2rem -0.2rem 0 black,
-			-0.2rem 0.2rem 0 black, 0.2rem 0.2rem 0 black;
+		text-shadow: clamp(-0.1rem, -0.2rem, -0.2rem)
+				clamp(-0.1rem, -0.2rem, -0.2rem) 0 black,
+			clamp(0.1rem, 0.2rem, 0.2rem) clamp(-0.1rem, -0.2rem, -0.2rem) 0 black,
+			clamp(-0.1rem, -0.2rem, -0.2rem) clamp(0.1rem, 0.2rem, 0.2rem) 0 black,
+			clamp(0.1rem, 0.2rem, 0.2rem) clamp(0.1rem, 0.2rem, 0.2rem) 0 black;
 
 		sup {
 			transition: all 0.2s ease-in;
@@ -106,7 +109,7 @@ export const Img = styled.div`
 `;
 export const Button = styled.div`
 	font-family: "Roboto", sans-serif;
-	font-size: clamp(2rem, 3vw, 3rem);
+	font-size: clamp(1rem, 3vw, 3rem);
 	color: white;
 	width: fit-content;
 	height: fit-content;

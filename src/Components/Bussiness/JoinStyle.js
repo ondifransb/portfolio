@@ -5,7 +5,7 @@ export const Form = styled.div`
 	margin: 0;
 	padding: 0;
 
-	width: clamp(20rem, 35vw, 50rem);
+	width: clamp(12rem, 35vw, 50rem);
 	height: 50%;
 
 	border: none;
@@ -28,9 +28,10 @@ export const Form = styled.div`
 	align-items: center;
 
 	h3 {
-		font-size: clamp(1rem, 1.2vw, 2vw);
+		font-size: clamp(1rem, 2vw, 2vw);
 		font-family: "Roboto", sans-serif;
 		font-weight: bolder;
+		text-align: center;
 
 		span {
 			color: #001aff;
@@ -72,7 +73,7 @@ export const Input = styled.input`
 	font-weight: bolder;
 
 	width: 75%;
-	height: 15%;
+	height: clamp(1.5rem, 2vw, 2vw);
 
 	border: none;
 	border-radius: clamp(0.5rem, 1rem, 1rem);

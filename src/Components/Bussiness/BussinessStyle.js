@@ -38,6 +38,9 @@ export const ContentHome = styled(Home)`
 	transition: 0.2s ease-out;
 	padding: 0.1rem;
 
+	display: flex;
+	float: right;
+
 	&:hover {
 		letter-spacing: 0.4rem;
 		color: #23cc8c;
@@ -47,8 +50,6 @@ export const ContentHome = styled(Home)`
 export const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
-	width: 33.3%;
-	float: center;
 	width: 66.6%;
 
 	/* @media only screen and (max-width: 600px) {
@@ -95,21 +96,6 @@ export const Registration = styled.div`
 	}
 `;
 
-const Animation = keyframes`
-from{
-    opacity: 0;
-	left: 40%;
-	top: 40%;
-	transform: translate(-40%, -40%);
-}
-to{
-    opacity: 1;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-`;
-
 export const HeroSection = styled.div`
 	width: 95%;
 	height: 92%;
@@ -119,8 +105,6 @@ export const HeroSection = styled.div`
 	transform: translate(-50%, -50%);
 	text-align: center;
 	padding: 2rem 0;
-
-	animation: ${Animation} 1s ease-out forwards;
 
 	h1 {
 		display: inline;
@@ -152,7 +136,7 @@ export const MainHeroWrapper = styled.div`
 		position: absolute;
 		bottom: 0;
 		color: white;
-		font-size: clamp(0.9rem, 2vw, 3rem);
+		font-size: clamp(0.8rem, 2vw, 2vw);
 		font-family: "Heebo", sans-serif;
 		left: 50%;
 		transform: translate(-50%);
@@ -163,21 +147,33 @@ export const MainHeroWrapper = styled.div`
 
 export const Photo = styled.div`
 	width: 30%;
-	height: 70%;
-	border-radius: 2rem;
+	height: clamp(10rem, 20vw, 20vw);
+	border-radius: clamp(1rem, 2vw, 2vw);
 	box-shadow: 2px 8px 15px 0px #1276a8;
 	background-image: linear-gradient(#9ca7ec, #89e9e1);
 	transition: 0.2s ease-out;
-	position: relative;
 	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	h1 {
 		display: inline;
-		font-size: clamp(1rem, 2vw, 4rem);
+		font-size: clamp(0.8rem, 2vw, 2vw);
 		font-family: "Heebo", sans-serif;
 		color: #ffff;
 		opacity: 0.7;
 		transition: 0.2s ease-in;
+		line-height: clamp(2rem, 4vw, 4vw);
+	}
+
+	p {
+		display: block;
+		font-size: clamp(0.6rem, 1.5vw, 1.5vw);
+		font-family: "Roboto", sans-serif;
+		text-align: justify;
+		line-height: normal;
 	}
 
 	&:hover {
@@ -189,8 +185,10 @@ export const SecondLayer = styled(HeroSection)`
 	height: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	margin: 1rem 0;
+
+	position: relative;
 
 	h1 {
 		width: fit-content;
@@ -199,28 +197,18 @@ export const SecondLayer = styled(HeroSection)`
 		text-shadow: 2px 2px 2px #1276a8;
 	}
 
-	p {
-		display: block;
-		font-size: clamp(1rem, 1.8vw, 2rem);
-		font-family: "Roboto", sans-serif;
-		width: 90%;
-		text-align: justify;
-	}
-
 	${Photo}:nth-child(1) {
 		display: flex;
-		align-items: flex-start;
 		justify-content: center;
 		flex-direction: column;
 		box-shadow: none;
 		background: none;
+
+		position: relative;
+		float: left;
+
 		h1 {
-			/* line-height: clamp(1rem, 8vh, 6rem); */
-		}
-		p {
-			width: 100%;
-			line-height: normal;
-			color: white;
+			position: absolute;
 		}
 
 		&:hover {
@@ -273,8 +261,6 @@ export const ThirdLayer = styled(SecondLayer)`
 	${Photo}:nth-child(1) {
 		display: flex;
 		flex-direction: row;
-		/* align-items: center; */
-		justify-content: flex-start;
 		box-shadow: none;
 		background: none;
 		width: 60%;
@@ -301,7 +287,6 @@ export const ThirdLayer = styled(SecondLayer)`
 		box-shadow: none;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
 		width: 40%;
 
 		h1 {
@@ -333,7 +318,6 @@ export const ThirdLayer = styled(SecondLayer)`
 export const FourthLayer = styled(SecondLayer)`
 	${Photo}:nth-child(1) {
 		display: flex;
-		align-items: flex-start;
 		box-shadow: none;
 		background: none;
 
@@ -373,9 +357,13 @@ export const Footer = styled.div`
 	align-items: center;
 
 	h1 {
-		font-size: clamp(0.5rem, 1vw, 1rem);
+		font-size: clamp(0.5rem, 1vw, 1vw);
 		font-family: "Heebo", sans-serif;
 		color: white;
+
+		@media only screen and (max-width: 500px) {
+			opacity: 0;
+		}
 	}
 `;
 
@@ -387,7 +375,8 @@ export const MediaSocial = styled.a`
 	align-items: center;
 
 	img {
-		width: fit-content;
+		width: clamp(2rem, 3vw, 3vw);
+		height: clamp(2rem, 3vw, 3vw);
 
 		justify-content: space-around;
 
