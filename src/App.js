@@ -14,23 +14,21 @@ import Register from "./Components/Bussiness/Register";
 
 function App() {
 	return (
-		<Router>
-			<Routes>
-				<Route path="/" element={<HomePage />} />
-				<Route path="/projects" element={<Portfolio />} />
+		<Routes>
+			<Route path="/" element={<HomePage />} />
+			<Route path="/projects" element={<Portfolio />} />
 
-				<Route path="/Porto" element={<Bussiness />} />
-				<Route path="Porto/Subs" element={<Berlangganan />} />
-				<Route path="Porto/Join" element={<Join />} />
-				<Route path="Porto/Register" element={<Register />} />
+			<Route path="/Porto" element={<Bussiness />} />
+			<Route path="Porto/Subs" element={<Berlangganan />} />
+			<Route path="Porto/Join" element={<Join />} />
+			<Route path="Porto/Register" element={<Register />} />
 
-				<Route path="/Uvisual" element={<Uvisual />} />
+			<Route path="/Uvisual" element={<Uvisual />} />
 
-				<Route path="/Avana" element={<MainMSSM />} />
-				<Route path="/Avana/HomePage" element={<AvanaHome />} />
-				<Route path="/Avana/Portfolio" element={<ShowMore />} />
-			</Routes>
-		</Router>
+			<Route path="/Avana" element={<MainMSSM />} />
+			<Route path="/Avana/HomePage" element={<AvanaHome />} />
+			<Route path="/Avana/Portfolio" element={<ShowMore />} />
+		</Routes>
 	);
 }
 
