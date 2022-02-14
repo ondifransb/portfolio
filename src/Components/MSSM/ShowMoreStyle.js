@@ -129,7 +129,7 @@ export const OnGoinWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 
-	position: relative;
+	position: absolute;
 	transform: translate(99.99%, -100%);
 
 	animation: ${(props) =>
@@ -237,7 +237,10 @@ export const OnGoingTrigger3 = styled.div`
 	left: 50.5%;
 	top: 92%;
 
+	color: gray;
+
 	p {
+		font-size: clamp(0.8rem, 1vw, 2vw);
 		opacity: 0.2;
 		transition: 0.1s ease-in;
 
@@ -246,8 +249,17 @@ export const OnGoingTrigger3 = styled.div`
 			transform: scale(1.05);
 		}
 	}
+
+	@media only screen and (max-width: 414px) {
+		top: 90%;
+		left: 36%;
+	}
 `;
 
 export const OnGoingTrigger4 = styled(OnGoingTrigger3)`
 	left: 47.5%;
+
+	@media only screen and (max-width: 414px) {
+		left: 54%;
+	}
 `;

@@ -100,7 +100,7 @@ export const Thankyou = styled.div`
 	padding: 0;
 	margin: 0;
 	width: fit-content;
-	font-size: clamp(1rem, 4vw, 4vw);
+	font-size: clamp(0.8rem, 4vw, 4vw);
 `;
 export const Hope = styled.div`
 	display: block;
@@ -110,7 +110,7 @@ export const Hope = styled.div`
 	padding: 0;
 	margin: 0;
 	width: fit-content;
-	font-size: clamp(0.8rem, 2vw, 2vw);
+	font-size: clamp(0.55rem, 2vw, 2vw);
 `;
 export const SecondSection = styled.div`
 	box-sizing: border-box;
@@ -176,6 +176,7 @@ export const Name = styled.div`
 		line-height: 1.2;
 		font-weight: lighter;
 		text-align: right;
+		text-decoration: line-through;
 	}
 
 	h1:nth-child(1) {

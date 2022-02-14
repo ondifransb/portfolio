@@ -15,6 +15,7 @@ export const AvanaLogo = styled.div`
 	background-image: url(${(props) => props.Picture});
 	background-size: cover;
 	background-position: center;
+
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -28,5 +29,10 @@ export const AvanaLogo = styled.div`
 	&:hover {
 		filter: blur(0px);
 		-webkit-filter: blur(0px);
+	}
+
+	@media only screen and (max-width: 736px) {
+		width: 65%;
+		height: 6%;
 	}
 `;

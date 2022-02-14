@@ -37,10 +37,12 @@ export const LogoContent = styled(Logo)`
 export const Glass = styled.div`
 	width: 100%;
 	height: 92.2%;
+
 	background: rgba(255, 255, 255, 0);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
+
 	position: relative;
 	bottom: 0;
 	display: flex;
@@ -54,6 +56,8 @@ export const Glass = styled.div`
 		margin: 2rem;
 		width: 50%;
 		height: fit-content;
+
+		font-size: clamp(0.7rem, 2vw, 2vw);
 		text-shadow: 2px 2px 2px #26c4a4;
 		font-weight: bolder;
 		border: none;
@@ -115,8 +119,29 @@ export const Projects = styled.div`
 	-webkit-backdrop-filter: blur(4.7px);
 	border-radius: 1rem;
 	margin: 2rem;
+
 	transition: 0.3s ease-in;
 	cursor: pointer;
+
+	@media only screen and (max-width: 736px) {
+		width: 95%;
+		height: fit-content;
+
+		&:hover {
+			transform: scale(1.05);
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			h1 {
+				color: red;
+				transform: scale(1.05);
+				filter: blur(2px);
+			}
+			p {
+				transform: scale(0.9);
+				filter: blur(2px);
+			}
+		}
+	}
 
 	&:hover {
 		transform: scale(1.05);
@@ -125,21 +150,24 @@ export const Projects = styled.div`
 		h1 {
 			color: red;
 			transform: scale(1.05);
-			filter: blur(2px);
+			filter: blur(0px);
 		}
 		p {
 			transform: scale(0.9);
-			filter: blur(1px);
+			filter: blur(0px);
 		}
+	}
+
+	p {
+		font-size: clamp(0.5rem, 2vw, 2vw);
 	}
 
 	h1 {
 		text-align: center;
-		font-size: clamp(3rem, 5vw, 8rem);
+		font-size: clamp(1rem, 2vw, 2vw);
 		text-shadow: 2px 2px 2px black;
 		filter: blur(15px);
 		width: 100%;
-		height: 50%;
 		margin: 0;
 		transition: 0.3s ease-in;
 	}

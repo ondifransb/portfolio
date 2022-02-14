@@ -106,6 +106,11 @@ export const HeroSection = styled.div`
 	text-align: center;
 	padding: 2rem 0;
 
+	@media only screen and (max-width: 414px) {
+		height: 70%;
+		top: 40%;
+	}
+
 	h1 {
 		display: inline;
 		font-size: clamp(3rem, 5vw, 8rem);
@@ -122,8 +127,8 @@ export const HeroSection = styled.div`
 
 export const MainHeroWrapper = styled.div`
 	box-sizing: border-box;
-	width: 90%;
-	height: 85%;
+	width: 100%;
+	height: 70%;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
@@ -133,6 +138,7 @@ export const MainHeroWrapper = styled.div`
 	padding: 1rem 0;
 
 	h1:nth-child(4) {
+		width: 100%;
 		position: absolute;
 		bottom: 0;
 		color: white;
@@ -160,12 +166,14 @@ export const Photo = styled.div`
 
 	h1 {
 		display: inline;
-		font-size: clamp(0.8rem, 2vw, 2vw);
+		font-size: clamp(0.5rem, 2vw, 2vw);
 		font-family: "Heebo", sans-serif;
 		color: #ffff;
 		opacity: 0.7;
 		transition: 0.2s ease-in;
 		line-height: clamp(2rem, 4vw, 4vw);
+	}
+
 	}
 
 	p {
@@ -187,6 +195,10 @@ export const SecondLayer = styled(HeroSection)`
 	align-items: center;
 	justify-content: center;
 	margin: 1rem 0;
+
+	@media only screen and (max-width: 414px) {
+		height: 40%;
+	}
 
 	position: relative;
 
@@ -318,8 +330,21 @@ export const ThirdLayer = styled(SecondLayer)`
 export const FourthLayer = styled(SecondLayer)`
 	${Photo}:nth-child(1) {
 		display: flex;
+		justify-content: center;
+		flex-direction: column;
 		box-shadow: none;
 		background: none;
+
+		position: relative;
+		float: left;
+
+		@media only screen and (max-width: 414px) {
+			width: 60%;
+		}
+
+		h1 {
+			position: absolute;
+		}
 
 		&:hover {
 			transform: scale(1.05);
@@ -331,16 +356,19 @@ export const FourthLayer = styled(SecondLayer)`
 	}
 
 	${Photo}:nth-child(2) {
-		box-shadow: none;
-		background: none;
+		background: yellow;
 		display: flex;
 		align-items: center;
-		width: 50%;
+		box-shadow: none;
+		background: none;
+		width: 60%;
 		height: fit-content;
+
 		img {
 			width: 100%;
 			height: 100%;
 		}
+
 		&:hover {
 			transform: scale(1);
 		}

@@ -23,9 +23,7 @@ function HomePage() {
 	const [CustName, setCustName] = useState("");
 
 	useEffect(() => {
-		alert(
-			"for a better experience, please use desktop. mobile version is under construction."
-		);
+		alert("for the full experience, please use desktop");
 	}, []);
 
 	useEffect(() => {
@@ -55,15 +53,16 @@ function HomePage() {
 						<Photo Picture={Stitch}></Photo>
 					</Picture>
 					<p>
-						i always want to create new and unique things. getting into app
-						development has changed me a lot, and since then, i try to push my
-						work to the new whole level with each project. i always put quality
-						first. for each project i work on, i pay particular attention to the
-						interaction, animations and (obviously) performances. this is just
-						the beginning, and i really can’t wait to push my limit even further
+						i always want to explore. getting into app development has changed
+						me a lot, and since then, i try to push myself and especially my
+						work to the new whole level with each project. quality first, for
+						each project i work on, i pay particular attention to the
+						interaction, animations and (obviously) performances. THIS IS JUST
+						THE BEGINNING, and i really can’t wait to push my limit even further
 						by working with you on our next project. i usually want my work use
 						less third parties library, it allows me to feel a complete freedom
-						and also i want to test my competence, creativity, and imagination.
+						and also i want to test myself, my competence, my creativity, and my
+						imagination.
 					</p>
 				</BioWrapper>
 			</SecondSection>

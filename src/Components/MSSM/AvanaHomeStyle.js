@@ -111,35 +111,49 @@ export const HeroWrapper = styled.div`
 `;
 
 export const Desc = styled.div`
+	width: 90%;
 	height: fit-content;
+
 	position: relative;
 	top: 48%;
 	left: 48%;
 	transform: translate(-50%, -50%);
+
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	font-size: clamp(1rem. 1vw, 2rem);
+
 	font-family: "SansGX";
+
 	opacity: 0;
 	transition: 1s ease-in;
 	animation: ${DescAnimation} 1s 2s ease-in forwards;
 
+	@media only screen and (max-width: 414px) {
+		width: 90%;
+	}
+
 	h1 {
-		width: 50%;
+		font-size: clamp(1rem, 2vw, 2vw);
 		height: fit-content;
 		text-align: justify;
 	}
 	h3 {
+		font-size: clamp(1rem, 2vw, 2vw);
 		font-weight: lighter;
-		width: 50%;
 		height: fit-content;
 		text-align: justify;
 	}
 	p {
+		font-size: clamp(0.8rem, 2vw, 2vw);
 		transition: 0.2s ease-in-out;
 		margin-top: 0;
 		opacity: 0;
+
+		width: fit-content;
+		position: relative;
+		top: 0%;
+		left: 50%;
+		transform: translate(-50%, 0%);
 
 		cursor: pointer;
 
@@ -148,7 +162,6 @@ export const Desc = styled.div`
 
 		&:hover {
 			color: gray;
-			transform: scale(1.05);
 			letter-spacing: 1px;
 		}
 	}

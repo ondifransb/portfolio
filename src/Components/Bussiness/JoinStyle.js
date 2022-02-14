@@ -27,6 +27,10 @@ export const Form = styled.div`
 	justify-content: space-around;
 	align-items: center;
 
+	@media only screen and (max-width: 414px) {
+		width: clamp(18rem, 40vw, 40rem);
+	}
+
 	h3 {
 		font-size: clamp(1rem, 2vw, 2vw);
 		font-family: "Roboto", sans-serif;

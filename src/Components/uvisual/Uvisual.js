@@ -24,8 +24,8 @@ function Uvisual() {
 				<Glass>
 					<h1>
 						-UVISUAL- <br />A GROUP OF AN ARTIST, DESIGNER, CULTURAL ACTIVISTS,
-						PROGRAMMER, ENGINEER, AND MUSICIAN WORKING TOGETHER TO MAKE A{" "}
-						<span>NEW VISUAL EXPERIENCE.</span> <br />
+						PROGRAMMER, ENGINEER, AND MUSICIAN WORKING TOGETHER TO MAKE A <br />
+						<span>NEW VISUAL EXPERIENCE.</span>
 					</h1>
 				</Glass>
 
