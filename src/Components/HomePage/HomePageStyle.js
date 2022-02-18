@@ -176,7 +176,6 @@ export const Name = styled.div`
 		line-height: 1.2;
 		font-weight: lighter;
 		text-align: right;
-		text-decoration: line-through;
 	}
 
 	h1:nth-child(1) {

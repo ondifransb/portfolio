@@ -5,6 +5,7 @@ import {
 	Logo,
 	Wrapper,
 	Registration,
+	Burger,
 } from "./BussinessStyle";
 
 import { useNavigate } from "react-router-dom";
@@ -28,16 +29,20 @@ function ComponentNavbar() {
 	}, []);
 	console.log(Width);
 
+	const [Clicked, setClicked] = useState(false);
+
 	return (
 		<ContentNav>
-			<Logo onClick={() => Navigate("/Porto")} Picture={Porto}>
-				Logo Detail
+			<Logo onClick={() => Navigate("/Porto")}>
+				<img src={Porto} alt="" />
 			</Logo>
-			<Wrapper>
-				<ContentHome onClick={() => Navigate("/Porto/Subs")}>Stock</ContentHome>
 
-				{Width <= 568 ? null : (
-					<>
+			{Width >= 568 ? (
+				<>
+					<Wrapper>
+						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
+							Stock
+						</ContentHome>
 						<ContentHome onClick={() => Navigate("/Porto/Subs")}>
 							Education
 						</ContentHome>
@@ -51,9 +56,27 @@ function ComponentNavbar() {
 								JOIN
 							</ContentHome>
 						</Registration>
-					</>
-				)}
-			</Wrapper>
+					</Wrapper>
+				</>
+			) : (
+				<>
+					<Burger Clicked={Clicked} onClick={() => setClicked(true)}>
+						{Clicked ? (
+							<>
+								<ContentHome onClick={() => Navigate("/Porto/Subs")}>
+									Stock
+								</ContentHome>
+								<ContentHome onClick={() => Navigate("/Porto/Subs")}>
+									Education
+								</ContentHome>
+								<ContentHome onClick={() => Navigate("/Porto/Subs")}>
+									Article
+								</ContentHome>{" "}
+							</>
+						) : null}
+					</Burger>
+				</>
+			)}
 		</ContentNav>
 	);
 }

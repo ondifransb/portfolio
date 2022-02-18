@@ -63,6 +63,12 @@ export const Project = styled.div`
 	&:hover {
 		background-size: 102%;
 	}
+
+	@media only screen and (max-width: 414px) {
+		&:hover {
+			background-size: 400%;
+		}
+	}
 `;
 
 export const CompletedWrapper = styled.div`
@@ -252,7 +258,7 @@ export const OnGoingTrigger3 = styled.div`
 
 	@media only screen and (max-width: 414px) {
 		top: 90%;
-		left: 36%;
+		left: 54%;
 	}
 `;
 
@@ -260,6 +266,6 @@ export const OnGoingTrigger4 = styled(OnGoingTrigger3)`
 	left: 47.5%;
 
 	@media only screen and (max-width: 414px) {
-		left: 54%;
+		left: 36%;
 	}
 `;

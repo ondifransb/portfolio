@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import { NavbarStyle, Home } from "../HomePage/HomePageStyle";
 
 export const Content = styled.div`
@@ -50,22 +50,30 @@ export const ContentHome = styled(Home)`
 export const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
-	width: 66.6%;
-
-	/* @media only screen and (max-width: 600px) {
-		flex-direction: column;
-	} */
+	width: 67.6%;
 `;
 
 export const Logo = styled.div`
 	font-size: clamp(0.5rem, 2vw, 1.5rem);
 	font-family: "Heebo", sans-serif;
-	width: fit-content;
-	height: 100%;
-	background-image: url(${(props) => props.Picture});
-	background-size: cover;
+	width: 6%;
 	color: transparent;
 	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+
+	img {
+		width: 90%;
+	}
+
+	@media only screen and (max-width: 414px) {
+		img {
+			width: 100%;
+		}
+
+		width: 15%;
+	}
 `;
 
 const Animation1 = keyframes`
@@ -94,6 +102,53 @@ export const Registration = styled.div`
 			border-bottom: 0.15rem solid darkblue;
 		}
 	}
+`;
+
+const BurgerAnimationON = keyframes`
+from{
+	width: clamp(2rem, 2vw, 2vw);
+}
+to{
+	width: 40vw;
+	background-color: transparent;
+}
+`;
+
+const BurgerAnimationOFF = keyframes`
+from{
+	width: clamp(2rem, 2vw, 2vw);
+}
+to{
+	width: clamp(2rem, 2vw, 2vw);
+}
+`;
+
+export const Burger = styled.div`
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: green;
+	width: clamp(2rem, 2vw, 2vw);
+	height: clamp(0.5rem, 3vw, 3vw);
+
+	border-radius: clamp(1rem, 2vw, 2vw);
+	border: none;
+
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	animation: ${(props) =>
+		props.Clicked
+			? css`
+					${BurgerAnimationON} 0.3s ease-in forwards;
+			  `
+			: css`
+					${BurgerAnimationOFF} 0.3s ease-in forwards;
+			  `};
 `;
 
 export const HeroSection = styled.div`
@@ -128,7 +183,7 @@ export const HeroSection = styled.div`
 export const MainHeroWrapper = styled.div`
 	box-sizing: border-box;
 	width: 100%;
-	height: 70%;
+	height: 80%;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
@@ -205,7 +260,7 @@ export const SecondLayer = styled(HeroSection)`
 	h1 {
 		width: fit-content;
 		text-align: left;
-		font-size: clamp(2rem, 4vw, 6rem);
+		font-size: clamp(1.5rem, 4vw, 6rem);
 		text-shadow: 2px 2px 2px #1276a8;
 	}
 

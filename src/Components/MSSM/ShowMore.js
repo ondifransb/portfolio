@@ -86,6 +86,7 @@ function ShowMore() {
 						<Project Picture={Rumah6}></Project>
 					</ProjectWrapper>
 				</CompletedWrapper>
+
 				<OnGoinWrapper animate={active}>
 					<h1>
 						{OnGoingSplitSpan.map((item, index) => (
