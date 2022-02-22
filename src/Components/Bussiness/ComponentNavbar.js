@@ -6,6 +6,9 @@ import {
 	Wrapper,
 	Registration,
 	Burger,
+	Hamburger,
+	Hamburger2,
+	Hamburger3,
 } from "./BussinessStyle";
 
 import { useNavigate } from "react-router-dom";
@@ -73,7 +76,12 @@ function ComponentNavbar() {
 									Article
 								</ContentHome>{" "}
 							</>
-						) : null}
+						) : (
+							<>
+								{" "}
+								<Hamburger /> <Hamburger2 /> <Hamburger3 />{" "}
+							</>
+						)}
 					</Burger>
 				</>
 			)}

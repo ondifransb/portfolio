@@ -132,7 +132,6 @@ export const Burger = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	background-color: green;
 	width: clamp(2rem, 2vw, 2vw);
 	height: clamp(0.5rem, 3vw, 3vw);
 
@@ -149,6 +148,38 @@ export const Burger = styled.div`
 			: css`
 					${BurgerAnimationOFF} 0.3s ease-in forwards;
 			  `};
+`;
+
+export const Hamburger = styled.div`
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	height: 40%;
+	width: 5%;
+	background-color: #14caa0;
+
+	border-radius: 2px;
+`;
+
+export const Hamburger2 = styled(Hamburger)`
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	height: 60%;
+	background-color: #0fb08b;
+	margin-left: 2px;
+`;
+
+export const Hamburger3 = styled(Hamburger)`
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	height: 80%;
+	background-color: #0eaf89;
+	margin-left: 2px;
 `;
 
 export const HeroSection = styled.div`
