@@ -9,6 +9,7 @@ import {
 	Desc2,
 	Img,
 	Button,
+	Button2,
 } from "./PortfolioStyle";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../Navbar";
@@ -40,7 +41,7 @@ function Portfolio() {
 				<Wrapper>
 					<Content>
 						<Img Picture={Studio}></Img>
-						<Button onClick={() => Navigate("/Uvisual")}>more detail</Button>
+						<Button2 onClick={() => Navigate("/Uvisual")}>more detail</Button2>
 					</Content>
 				</Wrapper>
 

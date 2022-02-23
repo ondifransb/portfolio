@@ -240,14 +240,14 @@ export const OnGoingTrigger3 = styled.div`
 	border-radius: 50%;
 
 	position: absolute;
-	left: 50.5%;
-	top: 92%;
+	left: 51%;
+	top: 90%;
 
-	color: gray;
+	color: black;
 
 	p {
 		font-size: clamp(0.8rem, 1vw, 2vw);
-		opacity: 0.2;
+		opacity: 0.5;
 		transition: 0.1s ease-in;
 
 		&:hover {
@@ -263,7 +263,7 @@ export const OnGoingTrigger3 = styled.div`
 `;
 
 export const OnGoingTrigger4 = styled(OnGoingTrigger3)`
-	left: 47.5%;
+	left: 47%;
 
 	@media only screen and (max-width: 414px) {
 		left: 36%;

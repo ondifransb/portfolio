@@ -66,7 +66,7 @@ function ShowMore() {
 			<Content>
 				<NavWrapper>
 					<NavLogo>
-						<img src={Logo} onClick={() => Navigate("/Architect/HomePage")} />
+						<img src={Logo} onClick={() => Navigate("/Avana/HomePage")} />
 					</NavLogo>
 				</NavWrapper>
 				<CompletedWrapper>

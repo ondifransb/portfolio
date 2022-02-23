@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
 	box-sizing: border-box;
@@ -73,10 +73,25 @@ export const MainHero = styled.div`
 	display: flex;
 	align-items: center;
 `;
+
+const WellcomingAnimation = keyframes`
+to{
+	opacity: 1;
+	transform: translate(0%, 0%);
+}
+`;
+
 export const Wellcoming = styled.div`
 	box-sizing: border-box;
 	padding: 0;
 	position: relative;
+
+	opacity: 0;
+
+	transform: translate(-5%, 5%);
+
+	animation: ${WellcomingAnimation} 1.5s 3s ease-in forwards;
+
 	@media (min-width: 319px) {
 	}
 	@media (min-width: 481px) {
@@ -124,7 +139,6 @@ export const SecondSection = styled.div`
 export const BioWrapper = styled.div`
 	overflow: hidden;
 	box-sizing: border-box;
-	padding: 1rem;
 	margin: 0;
 	width: 72rem;
 	height: 90%;
@@ -137,9 +151,9 @@ export const BioWrapper = styled.div`
 	justify-content: space-around;
 
 	p {
-		height: 7rem;
-		overflow: none;
-		font-size: clamp(1rem, 0.5vw, 1rem);
+		height: 5rem;
+		overflow: scroll;
+		font-size: clamp(0.8rem, 0.5vw, 1rem);
 		font-weight: lighter;
 		position: absolute;
 		bottom: 3rem;
@@ -147,7 +161,8 @@ export const BioWrapper = styled.div`
 		width: 85%;
 
 		@media screen and (max-width: 1100px) {
-			color: white;
+			color: black;
+			top: 58%;
 		}
 	}
 `;

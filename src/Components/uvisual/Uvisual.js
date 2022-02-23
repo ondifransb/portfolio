@@ -19,11 +19,14 @@ function Uvisual() {
 			<Navbar />
 			<MainWrapper>
 				<Navigation>
-					<LogoContent Picture={UvisLogo}>asdasdada</LogoContent>
+					<LogoContent Picture={UvisLogo}>
+						<a href="https://www.instagram.com/uvisual/?hl=id">asdasdada</a>
+					</LogoContent>
 				</Navigation>
+
 				<Glass>
 					<h1>
-						-UVISUAL- <br />A GROUP OF AN ARTIST, DESIGNER, CULTURAL ACTIVISTS,
+						UVISUAL <br />A GROUP OF AN ARTIST, DESIGNER, CULTURAL ACTIVISTS,
 						PROGRAMMER, ENGINEER, AND MUSICIAN WORKING TOGETHER TO MAKE A <br />
 						<span>NEW VISUAL EXPERIENCE.</span>
 					</h1>

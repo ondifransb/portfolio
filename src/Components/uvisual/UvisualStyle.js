@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import {
 	Content,
 	ContentNav,
@@ -13,7 +13,8 @@ export const MainWrapper = styled(Content)`
 	background-size: cover;
 	background-position: center;
 	box-shadow: inset 0px 0px 10px 0px white;
-	overflow: scroll;
+	overflow-y: scroll; //mengatur Y axis
+	overflow-x: hidden; //mengatur X axis
 `;
 
 export const Navigation = styled(ContentNav)`
@@ -30,8 +31,15 @@ export const Nav = styled(ContentHome)`
 `;
 
 export const LogoContent = styled(Logo)`
+	width: fit-content;
 	height: 100%;
-	background-size: 100%;
+	background-size: cover;
+	background-image: url(${(props) => props.Picture});
+
+	a {
+		text-decoration: none;
+		opacity: 0;
+	}
 `;
 
 export const Glass = styled.div`

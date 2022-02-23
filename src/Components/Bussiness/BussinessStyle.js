@@ -305,8 +305,16 @@ export const SecondLayer = styled(HeroSection)`
 		position: relative;
 		float: left;
 
+		@media only screen and (max-width: 414px) {
+			width: 60%;
+			h1 {
+				line-height: 1rem;
+			}
+		}
+
 		h1 {
 			position: absolute;
+			font-size: clamp(1rem, 4vw, 6rem);
 		}
 
 		&:hover {
@@ -381,6 +389,7 @@ export const ThirdLayer = styled(SecondLayer)`
 			transform: scale(1);
 		}
 	}
+
 	${Photo}:nth-child(2) {
 		box-shadow: none;
 		display: flex;
@@ -401,6 +410,7 @@ export const ThirdLayer = styled(SecondLayer)`
 			width: 90%;
 			text-align: justify;
 			color: white;
+			transition: 0.2s ease-in;
 		}
 
 		&:hover {
@@ -408,6 +418,9 @@ export const ThirdLayer = styled(SecondLayer)`
 			h1 {
 				color: black;
 				text-shadow: 2px 1px 2px #1276a8;
+				p {
+					color: black;
+				}
 			}
 		}
 	}

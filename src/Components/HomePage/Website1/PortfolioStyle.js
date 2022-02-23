@@ -9,10 +9,8 @@ export const Container = styled.div`
 `;
 export const MainWrapper = styled.div`
 	box-sizing: border-box;
-	padding: 1rem 0 1rem 0;
 	margin: 0;
 	width: 100%;
-	background-image: linear-gradient(180deg, white 10%, black);
 `;
 export const Tittle = styled.div`
 	box-sizing: border-box;
@@ -53,11 +51,10 @@ export const Tittle = styled.div`
 `;
 export const Wrapper = styled.div`
 	box-sizing: border-box;
-	padding: 1rem;
-	margin: 0 0 10rem 0;
+	margin: 0 0 2rem 0;
 	display: flex;
 	position: relative;
-	padding: 2rem;
+	padding: 2rem 0;
 
 	//component child styled
 	&:nth-child(1) {
@@ -79,8 +76,8 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
 	box-sizing: border-box;
 	padding: 0;
-	width: 50%;
-	height: 45rem;
+	width: 30%;
+	height: clamp(20rem, 45vw, 45vw);
 	border: none;
 	overflow: hidden;
 	box-shadow: 0 4px 15px -1px rgba(0, 0, 0, 0.5);
@@ -88,7 +85,7 @@ export const Content = styled.div`
 
 	&:hover {
 		box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.5);
-		width: 85%;
+		width: 95%;
 	}
 	&:hover h1 {
 		left: -23%;
@@ -99,6 +96,7 @@ export const Img = styled.div`
 	width: 100%;
 	height: 100%;
 	background-image: url(${(props) => props.Picture});
+	background-position: center;
 	transform: scale(1.2);
 	transition: transform 0.8s 0.8s ease-in-out, opacity 0.1s ease-in;
 
@@ -114,7 +112,7 @@ export const Button = styled.div`
 	width: fit-content;
 	height: fit-content;
 	position: absolute;
-	bottom: -2rem;
+	bottom: -0.5rem;
 	opacity: 0;
 	transition: all 0.5s ease-in;
 	cursor: pointer;
@@ -123,6 +121,10 @@ export const Button = styled.div`
 		bottom: 2rem;
 		opacity: 0.5;
 	}
+`;
+
+export const Button2 = styled(Button)`
+	right: 0;
 `;
 export const Desc = styled.div`
 	box-sizing: border-box;

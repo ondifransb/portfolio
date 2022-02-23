@@ -82,7 +82,7 @@ const ShowAnimation = keyframes`
 }
 100%{
 	margin-top: clamp(0.5rem, 0.5vw, 1rem);
-	opacity: 1;
+	opacity: 0.3;
 }
 `;
 
@@ -142,9 +142,14 @@ export const Desc = styled.div`
 		font-weight: lighter;
 		height: fit-content;
 		text-align: justify;
+
+		span {
+			/* font-weight: 450; */
+			/* font-style: italic; */
+		}
 	}
 	p {
-		font-size: clamp(0.8rem, 2vw, 2vw);
+		font-size: clamp(0.8rem, 1.5vw, 1.5vw);
 		transition: 0.2s ease-in-out;
 		margin-top: 0;
 		opacity: 0;
@@ -163,6 +168,7 @@ export const Desc = styled.div`
 		&:hover {
 			color: gray;
 			letter-spacing: 1px;
+			opacity: 1;
 		}
 	}
 `;

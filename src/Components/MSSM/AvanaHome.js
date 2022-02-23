@@ -36,9 +36,12 @@ function AvanaHome() {
 						</h1>
 						<h3>
 							Studio AVANA was established by three architects with same vision.
-							Our vision is to achieve good quality and harmony between the
-							building, the user and the surrounding. We combined art, research,
-							and technology to create high quality space for the user.
+							<span>
+								Our vision is to achieve a good quality and the harmony between
+								the building, the user and the surrounding. We combined art,
+								research, and technology to create high quality space for the
+								user.
+							</span>
 						</h3>
 						<p onClick={() => Navigate("/Avana/Portfolio")}>show more</p>
 					</Desc>
