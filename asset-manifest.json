@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.df101c87.chunk.css",
-    "main.js": "/portfolio/static/js/main.8d5aa032.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8d5aa032.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.2381a812.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.2381a812.js.map",
-    "static/js/2.0a1d68e0.chunk.js": "/portfolio/static/js/2.0a1d68e0.chunk.js",
-    "static/js/2.0a1d68e0.chunk.js.map": "/portfolio/static/js/2.0a1d68e0.chunk.js.map",
-    "static/js/3.174ddef8.chunk.js": "/portfolio/static/js/3.174ddef8.chunk.js",
-    "static/js/3.174ddef8.chunk.js.map": "/portfolio/static/js/3.174ddef8.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.8965a96f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8965a96f.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.78e4af27.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.78e4af27.js.map",
+    "static/js/2.c944a8bb.chunk.js": "/portfolio/static/js/2.c944a8bb.chunk.js",
+    "static/js/2.c944a8bb.chunk.js.map": "/portfolio/static/js/2.c944a8bb.chunk.js.map",
+    "static/js/3.f0266350.chunk.js": "/portfolio/static/js/3.f0266350.chunk.js",
+    "static/js/3.f0266350.chunk.js.map": "/portfolio/static/js/3.f0266350.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.df101c87.chunk.css.map": "/portfolio/static/css/main.df101c87.chunk.css.map",
-    "static/js/2.0a1d68e0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.0a1d68e0.chunk.js.LICENSE.txt",
+    "static/js/2.c944a8bb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c944a8bb.chunk.js.LICENSE.txt",
     "static/media/1.f9e23fbc.webp": "/portfolio/static/media/1.f9e23fbc.webp",
     "static/media/10.d7bead72.webp": "/portfolio/static/media/10.d7bead72.webp",
     "static/media/11.babd468f.webp": "/portfolio/static/media/11.babd468f.webp",
@@ -31,6 +31,7 @@
     "static/media/InvestasiAla.860ae4ed.png": "/portfolio/static/media/InvestasiAla.860ae4ed.png",
     "static/media/Logo.57225678.png": "/portfolio/static/media/Logo.57225678.png",
     "static/media/Porto.77904dae.png": "/portfolio/static/media/Porto.77904dae.png",
+    "static/media/Profile.7fe14f0a.png": "/portfolio/static/media/Profile.7fe14f0a.png",
     "static/media/Research.7d5fb589.png": "/portfolio/static/media/Research.7d5fb589.png",
     "static/media/Research2.c2734f47.png": "/portfolio/static/media/Research2.c2734f47.png",
     "static/media/Rumah1.a0f56d72.webp": "/portfolio/static/media/Rumah1.a0f56d72.webp",
@@ -43,12 +44,13 @@
     "static/media/Studio.6bf0dbfb.jpeg": "/portfolio/static/media/Studio.6bf0dbfb.jpeg",
     "static/media/index.css": "/portfolio/static/media/UniversalSansGX.9ad76d13.ttf",
     "static/media/bnwProfilePicture.6a103cab.png": "/portfolio/static/media/bnwProfilePicture.6a103cab.png",
+    "static/media/coding.6ea3e6bc.png": "/portfolio/static/media/coding.6ea3e6bc.png",
     "static/media/file.358c39f6.mp4": "/portfolio/static/media/file.358c39f6.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.2381a812.js",
-    "static/js/2.0a1d68e0.chunk.js",
+    "static/js/runtime-main.78e4af27.js",
+    "static/js/2.c944a8bb.chunk.js",
     "static/css/main.df101c87.chunk.css",
-    "static/js/main.8d5aa032.chunk.js"
+    "static/js/main.8965a96f.chunk.js"
   ]
 }
