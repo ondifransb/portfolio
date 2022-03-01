@@ -16,6 +16,7 @@ import Navbar from "../../Navbar";
 import Bussiness from "./Coorporate.jpeg";
 import Studio from "./Studio.jpeg";
 import Coffee from "./Coffee.jpeg";
+import Coding from "./coding.png";
 
 function Portfolio() {
 	const Navigate = useNavigate();
@@ -49,6 +50,13 @@ function Portfolio() {
 					<Content>
 						<Img Picture={Coffee}></Img>
 						<Button onClick={() => Navigate("/Avana")}>more detail</Button>
+					</Content>
+				</Wrapper>
+
+				<Wrapper>
+					<Content>
+						<Img Picture={Coding}></Img>
+						<Button2 onClick={() => Navigate("/FrontEnd")}>more detail</Button2>
 					</Content>
 				</Wrapper>
 			</MainWrapper>

@@ -14,7 +14,7 @@ import {
 } from "./HomePageStyle";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
-import Stitch from "./Stitch.jpeg";
+import PhotoPict from "./bnwProfilePicture.png";
 import { useEffect, useState } from "react";
 
 function HomePage() {
@@ -50,7 +50,7 @@ function HomePage() {
 						<h1>butarbutar</h1>
 					</Name>
 					<Picture>
-						<Photo Picture={Stitch}></Photo>
+						<Photo Picture={PhotoPict}></Photo>
 					</Picture>
 					<p>
 						i always want to explore. getting into app development has changed

@@ -7,11 +7,13 @@ export const Container = styled.div`
 	width: 100%;
 	height: 100vh;
 `;
+
 export const MainWrapper = styled.div`
 	box-sizing: border-box;
 	margin: 0;
 	width: 100%;
 `;
+
 export const Tittle = styled.div`
 	box-sizing: border-box;
 	padding: 0;
@@ -27,11 +29,11 @@ export const Tittle = styled.div`
 		font-family: "Heebo", sans-serif;
 		color: white;
 		/* font stroke using shadowbox */
-		text-shadow: clamp(-0.1rem, -0.2rem, -0.2rem)
-				clamp(-0.1rem, -0.2rem, -0.2rem) 0 black,
-			clamp(0.1rem, 0.2rem, 0.2rem) clamp(-0.1rem, -0.2rem, -0.2rem) 0 black,
-			clamp(-0.1rem, -0.2rem, -0.2rem) clamp(0.1rem, 0.2rem, 0.2rem) 0 black,
-			clamp(0.1rem, 0.2rem, 0.2rem) clamp(0.1rem, 0.2rem, 0.2rem) 0 black;
+		text-shadow: clamp(-0.08rem, -0.2rem, -0.2rem)
+				clamp(-0.08rem, -0.2rem, -0.2rem) 0 black,
+			clamp(0.08rem, 0.2rem, 0.2rem) clamp(-0.08rem, -0.2rem, -0.2rem) 0 black,
+			clamp(-0.08rem, -0.2rem, -0.2rem) clamp(0.08rem, 0.2rem, 0.2rem) 0 black,
+			clamp(0.08rem, 0.2rem, 0.2rem) clamp(0.08rem, 0.2rem, 0.2rem) 0 black;
 
 		sup {
 			transition: all 0.2s ease-in;
@@ -49,6 +51,7 @@ export const Tittle = styled.div`
 		text-shadow: none;
 	}
 `;
+
 export const Wrapper = styled.div`
 	box-sizing: border-box;
 	margin: 0 0 2rem 0;
@@ -73,6 +76,7 @@ export const Wrapper = styled.div`
 		justify-content: flex-end;
 	}
 `;
+
 export const Content = styled.div`
 	box-sizing: border-box;
 	padding: 0;
@@ -80,7 +84,7 @@ export const Content = styled.div`
 	height: clamp(20rem, 45vw, 45vw);
 	border: none;
 	overflow: hidden;
-	box-shadow: 0 4px 15px -1px rgba(0, 0, 0, 0.5);
+	box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
 	transition: all 0.8s ease-in;
 
 	&:hover {
@@ -92,6 +96,7 @@ export const Content = styled.div`
 		opacity: 1;
 	}
 `;
+
 export const Img = styled.div`
 	width: 100%;
 	height: 100%;
@@ -102,30 +107,37 @@ export const Img = styled.div`
 
 	${Content}:hover & {
 		transform: scale(1);
-		opacity: 0.5;
+		opacity: 0.7;
 	}
 `;
+
 export const Button = styled.div`
 	font-family: "Roboto", sans-serif;
 	font-size: clamp(1rem, 3vw, 3rem);
-	color: white;
+	color: blanchedalmond;
 	width: fit-content;
 	height: fit-content;
 	position: absolute;
 	bottom: -0.5rem;
 	opacity: 0;
-	transition: all 0.5s ease-in;
+	transition: letter-spacing 0.2s ease-in, bottom 0.5s ease-in,
+		opacity 0.5s ease-in;
 	cursor: pointer;
 
 	${Content}:hover & {
 		bottom: 2rem;
 		opacity: 0.5;
 	}
+
+	&:hover {
+		letter-spacing: 2px;
+	}
 `;
 
 export const Button2 = styled(Button)`
 	right: 0;
 `;
+
 export const Desc = styled.div`
 	box-sizing: border-box;
 	padding: 0;
@@ -147,6 +159,7 @@ export const Desc = styled.div`
 		font-weight: lighter;
 	}
 `;
+
 export const Desc2 = styled(Desc)`
 	margin: 1rem 1rem 0 0;
 	left: 0rem;

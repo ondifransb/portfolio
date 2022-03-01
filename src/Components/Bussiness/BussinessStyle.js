@@ -260,8 +260,6 @@ export const Photo = styled.div`
 		line-height: clamp(2rem, 4vw, 4vw);
 	}
 
-	}
-
 	p {
 		display: block;
 		font-size: clamp(0.6rem, 1.5vw, 1.5vw);

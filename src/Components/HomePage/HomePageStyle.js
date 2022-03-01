@@ -10,8 +10,13 @@ export const Container = styled.div`
 export const NavbarStyle = styled.div`
 	box-sizing: border-box;
 	margin: 0;
+	padding: 0;
 	width: 100%;
+
 	position: fixed;
+	z-index: 100;
+
+	background-color: white;
 `;
 export const NavWrapper = styled.div`
 	box-sizing: border-box;
@@ -90,7 +95,7 @@ export const Wellcoming = styled.div`
 
 	transform: translate(-5%, 5%);
 
-	animation: ${WellcomingAnimation} 1.5s 3s ease-in forwards;
+	animation: ${WellcomingAnimation} 1.5s 2s ease-in forwards;
 
 	@media (min-width: 319px) {
 	}
