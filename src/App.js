@@ -11,7 +11,7 @@ import ShowMore from "./Components/MSSM/ShowMore";
 import Berlangganan from "./Components/Bussiness/Berlangganan";
 import Join from "./Components/Bussiness/Join";
 import Register from "./Components/Bussiness/Register";
-import FrontEnd from "./Components/FrontEnd/FrontEnd";
+import Instagram from "./Components/Instagram/Instagram";
 
 function App() {
 	return (
@@ -30,7 +30,7 @@ function App() {
 			<Route path="/Avana/HomePage" element={<AvanaHome />} />
 			<Route path="/Avana/Portfolio" element={<ShowMore />} />
 
-			<Route path="/FrontEnd" element={<FrontEnd />} />
+			<Route path="/Instagram" element={<Instagram />} />
 		</Routes>
 	);
 }

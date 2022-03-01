@@ -56,7 +56,9 @@ function Portfolio() {
 				<Wrapper>
 					<Content>
 						<Img Picture={Coding}></Img>
-						<Button2 onClick={() => Navigate("/FrontEnd")}>more detail</Button2>
+						<Button2 onClick={() => Navigate("/Instagram")}>
+							more detail
+						</Button2>
 					</Content>
 				</Wrapper>
 			</MainWrapper>

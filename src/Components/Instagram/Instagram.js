@@ -2,11 +2,10 @@ import React from "react";
 import { Container } from "../HomePage/HomePageStyle";
 import Navbar from "../Navbar";
 import Content from "./Content";
-import { MainWrapper } from "./FrontEndStyle";
-import UvisLogo from "./Logo.png";
+import { MainWrapper } from "./InstagramStyle";
 import NavbarCompt from "./Navbar";
 
-function FrontEnd() {
+function Instagram() {
 	return (
 		<Container>
 			<Navbar />
@@ -18,4 +17,4 @@ function FrontEnd() {
 	);
 }
 
-export default FrontEnd;
+export default Instagram;

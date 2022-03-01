@@ -28,6 +28,8 @@ export const ContentNav = styled(NavbarStyle)`
 	position: fixed;
 	left: 50%;
 	transform: translateX(-50%);
+
+	background-color: transparent;
 `;
 
 export const ContentHome = styled(Home)`
