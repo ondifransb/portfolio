@@ -7,6 +7,7 @@ import {
 	ExploreWrapper,
 	Wrapper,
 	Stories,
+	ProfileSec,
 } from "./ContentStyle";
 import Profile from "./Profile.png";
 
@@ -43,10 +44,16 @@ function Content() {
 					</Wrapper>
 				</StoriesWrapper>
 				<ExploreWrapper>
-					<h1>NONE TO SEE HERE</h1>
+					<h1>NONE TO SEE HERE YET</h1>
 				</ExploreWrapper>
 			</ContentWrapper>
-			<ProfileWrapper></ProfileWrapper>
+			<ProfileWrapper>
+				<ProfileSec>
+					<div>
+						<Stories Image={Profile} />
+					</div>
+				</ProfileSec>
+			</ProfileWrapper>
 		</Container>
 	);
 }

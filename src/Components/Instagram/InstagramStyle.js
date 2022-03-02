@@ -1,8 +1,16 @@
 import styled, { keyframes, css } from "styled-components";
 
+const WrapperAnimation = keyframes`
+to{
+	opacity: 1;
+}
+`;
 export const MainWrapper = styled.div`
 	height: 90%;
 	width: 100%;
+
+	opacity: 0;
+	animation: ${WrapperAnimation} 1s 1.5s ease-in forwards;
 
 	border: 0.1rem solid gray;
 
