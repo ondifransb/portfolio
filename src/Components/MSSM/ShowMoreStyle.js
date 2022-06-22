@@ -241,7 +241,8 @@ export const OnGoingTrigger3 = styled.div`
 
 	position: absolute;
 	left: 51%;
-	top: 90%;
+	bottom: clamp(50px, 10%, 50px);
+	z-index: 10000001;
 
 	color: black;
 

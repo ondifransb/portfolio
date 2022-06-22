@@ -156,7 +156,7 @@ export const BioWrapper = styled.div`
 	justify-content: space-around;
 
 	p {
-		height: 5rem;
+		height: fit-content;
 		overflow: scroll;
 		font-size: clamp(0.8rem, 0.5vw, 1rem);
 		font-weight: lighter;
@@ -164,6 +164,10 @@ export const BioWrapper = styled.div`
 		bottom: 3rem;
 		text-align: justify;
 		width: 85%;
+
+		::-webkit-scrollbar {
+			width: 0px;
+		}
 
 		@media screen and (max-width: 1100px) {
 			color: black;

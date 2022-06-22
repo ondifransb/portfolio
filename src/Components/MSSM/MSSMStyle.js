@@ -23,6 +23,7 @@ export const AvanaLogo = styled.div`
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	cursor: pointer;
+	z-index: 10001;
 
 	transition: 0.2s ease-in;
 
